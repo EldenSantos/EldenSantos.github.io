@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<!--renderizar para dispositivos moveis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/personalizado.css">
+
+    <title>Software</title>
+  </head>
+  <body>
+        <header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Software</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item menu">
+							<a class="nav-link" href="Index.html">Home</a>
+						</li>
+						<li class="nav-item menu">
+							<a class="nav-link" href="sobre_empresa.html">Sobre a Empresa</a>
+						</li>
+						<li class="nav-item menu">
+							<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item menu">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
+	
+	<main role="main">	
+	
+		<div class="jumbotron sobre-empresa">
+			<div class="container">
+				<h2 class="display-4 text-center titulo">Sobre a Empresa Software</h2>
+				<div class="row featurette">
+					<div class="col-md-7 order-md-2 sobre-emp-text">
+						<h2 class="featurette-heading">Sobre empresa um.</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
+					<div class="col-md-5 order-md-1 sobre-emp-img">
+						<img class="featurette-image img-fluid mx-auto" src="logo/empresa1.jpg" alt="Generic placeholder image">
+					</div>
+				</div>
+			
+				<hr class="featurette-divider">
+			
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading sobre-emp-text">Sobre empresa dois.</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
+					<div class="col-md-5 sobre-emp-img">
+						<img class="featurette-image img-fluid mx-auto" src="logo/empresa2.jpg" alt="Generic placeholder image">
+					</div>
+				</div>
+				<div class="row featurette">
+					<div class="col-md-7 order-md-2 sobre-emp-text">
+						<h2 class="featurette-heading">Sobre empresa um.</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
+					<div class="col-md-5 order-md-1 sobre-emp-img">
+						<img class="featurette-image img-fluid mx-auto" src="logo/empresa1.jpg" alt="Generic placeholder image">
+					</div>
+				</div>
+			
+				<hr class="featurette-divider">
+			
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading sobre-emp-text">Sobre empresa dois.</h2>
+						<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+					</div>
+					<div class="col-md-5 sobre-emp-img">
+						<img class="featurette-image img-fluid mx-auto" src="logo/empresa2.jpg" alt="Generic placeholder image">
+					</div>
+				</div>
+			</div>
+		</div>
+				
+	</main>
+	
+	<footer class="footer bg-dark">
+      <div class="container text-white text-center">
+		&copy copyright Software.com.br
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scrollreveal.min.js"></script>
+	
+	<script>
+		//Endereço do site que tem os códigos e arquivo para instalação https://github.com/scrollreveal/scrollreveal/wiki/Configuration-(v3.x)
+		
+		//se tirar o {reset: true} o site só ira animar os elemento na primeira vez. 
+		//se manter, sempre que passar pelos elementos eles irão apresentar com a animação colocada
+		window.sr = ScrollReveal({reset: true});
+		sr.reveal('.sobre-emp-text', {
+			origin: 'left',
+			distance: '20px',
+			duration: 2000,
+		});
+		sr.reveal('.sobre-emp-img', {
+			//de qual sentido ele irá aparecer bottom, left, right ou top
+			origin: 'bottom',
+			
+			distance: '20px',
+			//duração para o elemento aparecer na tela
+			duration: 1000,
+			//scala de profundidade com que o elemento vem aparecendo na tela
+			scale: 0.1,
+			//rotação do elemento
+			rotate: { x: 50, y:25, z: 100 }
+		});
+	</script>
+  </body>
+</html>
